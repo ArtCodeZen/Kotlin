@@ -21,9 +21,8 @@ fun main() {
      * */
     val aToz = "a".."z"
     val oneToten = 1 .. 10
-
+    val steps = oneToten.step(2)
     println("A até Z: ${"f" in aToz}")
-    
     println("1 até 10: $oneToten")
 
     val countinDown = 100.downTo(0)
@@ -31,4 +30,8 @@ fun main() {
     println(countinDown)
     println(rangeTo)
 
+    // for para teste
+    for (k in steps){
+        print("${k + 1},")
+    }
 }
