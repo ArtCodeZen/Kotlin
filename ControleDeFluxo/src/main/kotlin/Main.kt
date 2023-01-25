@@ -1,6 +1,8 @@
-fun main(args: Array<String>) {
+fun main() {
     println("Hello World!")
-    var person = Person()
+    val person = Person()
+    println(person.age())
     println("Status: ${person.checkLetter("amanda", "a")}")
-
+    println("BoolTest: ${person.boolTest("amanda")}")
+    println(person.tryException())
 }
