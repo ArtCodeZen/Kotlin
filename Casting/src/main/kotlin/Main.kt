@@ -1,5 +1,5 @@
 fun isString(any: Any) : Boolean{
-    return if(any == Int) true else false
+    return any is Int
 }
 fun selectItem(name: String): String{
     return when(name){
@@ -10,8 +10,16 @@ fun selectItem(name: String): String{
     }
 
 }
+fun ss(any: Any) {
+    if (any is String){
+        println("É string: ${any.length}" )
+    }else{
+        println("Não é string!")
+    }
+}
 fun main() {
     println("Casting")
     println(isString(String))
     println(selectItem("gss"))
+    ss(1)
 }
