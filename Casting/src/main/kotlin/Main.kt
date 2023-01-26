@@ -17,9 +17,14 @@ fun ss(any: Any) {
         println("Não é string!")
     }
 }
+fun castingExplicito(any: Any) : Int{
+    val string = any as String              // usar o as para casting explicito
+    return string.length
+}
 fun main() {
     println("Casting")
     println(isString(String))
     println(selectItem("gss"))
     ss(1)
+    println(castingExplicito("Texto"))
 }
