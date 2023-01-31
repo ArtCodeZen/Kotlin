@@ -27,6 +27,14 @@ fun mathAbs(x : Int): Boolean{
         else -> false
     }
 }
+
+// casting inteligente
+fun startWithFoo(any: Any) : Boolean{
+    return when(any){
+        is String -> any.startsWith("Foo")
+        else -> false
+    }
+}
 fun main() {
     println("When")
     val x = whenWhithouArgs(10, 10)
@@ -34,4 +42,5 @@ fun main() {
     println("Single Digit: ${isSingleDigit(9)}" )
     println("Die number: ${isDieNumber(5)}" )
     println("Math absolute: ${mathAbs(-10)}")
+    println("Start with Foo: ${startWithFoo("sd")}")
 }
