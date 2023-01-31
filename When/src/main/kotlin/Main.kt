@@ -1,3 +1,5 @@
+import kotlin.math.abs
+
 // when ser argumento! não tem argumento when(vazio)
 fun whenWhithouArgs(x: Int, y :Int) : Boolean{
     when {
@@ -6,9 +8,30 @@ fun whenWhithouArgs(x: Int, y :Int) : Boolean{
         else -> return false
     }
 }
+fun isSingleDigit(x : Int) : Boolean{
+    return when(x){
+        in -9..9 -> true
+        else -> false
+    }
+}
 
+fun isDieNumber(x : Int) : Boolean{
+    return when(x){
+        in listOf(1,2,3,4) -> true
+        else -> false
+    }
+}
+fun mathAbs(x : Int): Boolean{
+    return when(x){
+        abs(x) -> true
+        else -> false
+    }
+}
 fun main() {
     println("When")
     val x = whenWhithouArgs(10, 10)
     println(x)
+    println("Single Digit: ${isSingleDigit(9)}" )
+    println("Die number: ${isDieNumber(5)}" )
+    println("Math absolute: ${mathAbs(-10)}")
 }
