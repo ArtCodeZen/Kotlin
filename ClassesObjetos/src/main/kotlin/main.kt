@@ -1,9 +1,9 @@
 fun main(){
-    var device = smartDevice("Henrique", "TV", 1)
-    var person = Person("Henrique", "Watanabe", 26)
-    var person2 = Person2("Henrique", "Watanabe", null)
-    var classeDentroDeClasse = ClasseDentroDeClasse("Minha classe")
-    var someF = SomeField()
+    val device = smartDevice("Henrique", "TV", 1)
+    val person = Person("Henrique", "Watanabe", 26)
+    val person2 = Person2("Henrique", "Watanabe", null)
+    val classeDentroDeClasse = ClasseDentroDeClasse("Minha classe")
+    val someF = SomeField()
     try {
         Person("","oo", 26)
     }catch (e: Exception){
@@ -21,6 +21,7 @@ fun main(){
         println(it)
     }
     //get especific
-    println("Nome: " + Plants.valueOf("MANDIOCA") + " Dias: " + Plants.valueOf("MANDIOCA").days)
+    println("Nome: " + Plants.valueOf("MANDIOCA") + " Dias: " + Plants.valueOf("MANDIOCA").days + "Size: " + Plants.valueOf("MANDIOCA").size)
+    Word.HELLO.print()
     Word.HELP.print()
 }
