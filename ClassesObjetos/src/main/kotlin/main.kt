@@ -24,4 +24,9 @@ fun main(){
     println("Nome: " + Plants.valueOf("MANDIOCA") + " Dias: " + Plants.valueOf("MANDIOCA").days + "Size: " + Plants.valueOf("MANDIOCA").size)
     Word.HELLO.print()
     Word.HELP.print()
+
+    // Singleton
+    SingletonDerive.something()
+
+
 }
