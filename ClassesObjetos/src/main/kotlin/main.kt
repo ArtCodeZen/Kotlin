@@ -27,6 +27,7 @@ fun main(){
 
     // Singleton
     SingletonDerive.something()
+    println(Student.create("Henrique").name)
 
 
 }
