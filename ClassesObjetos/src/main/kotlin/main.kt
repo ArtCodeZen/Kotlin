@@ -1,3 +1,5 @@
+import Interface.MyDocument
+
 fun main(){
     val device = smartDevice("Henrique", "TV", 1)
     val person = Person("Henrique", "Watanabe", 26)
@@ -29,5 +31,8 @@ fun main(){
     SingletonDerive.something()
     println(Student.create("Henrique").name)
 
+    val myDocument = MyDocument()
+
+    println(myDocument.name)
 
 }
