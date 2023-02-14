@@ -1,3 +1,5 @@
+import Heranca.AmphibiousCar
+import Heranca.CheckPayment
 import Interface.MyDocument
 
 fun main(){
@@ -35,4 +37,11 @@ fun main(){
 
     println(myDocument.name)
 
+    // check payment
+    val checkPay = CheckPayment(22f, "James", "nn22")
+    println(checkPay.getAmount())
+    // amphibious car
+    val car = AmphibiousCar("tank")
+    car.Drive()
+    car.Sailable()
 }
