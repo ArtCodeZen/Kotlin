@@ -12,6 +12,7 @@ interface Document {
         fun save(input: InputStream)
         fun load(stream: OutputStream)
         fun getDescription(): String{
+
             return "Document $name has $size byte(-s)"
         }
 
