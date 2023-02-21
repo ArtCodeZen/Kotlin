@@ -15,5 +15,10 @@ class Shape{
             if(value != "")
                 field = value
         }
+    var idade : Int = 0
+        get() = field
+        set(value){
+            field = value
+        }
 
 }
