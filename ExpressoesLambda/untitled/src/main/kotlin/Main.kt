@@ -16,6 +16,8 @@ fun main() {
     repeat(times = 3){
         functionAltoBaixo()
     }
+    functionAltoBaixoResumida()
+    functionAltoBaixoFinal()
 
 
 }
