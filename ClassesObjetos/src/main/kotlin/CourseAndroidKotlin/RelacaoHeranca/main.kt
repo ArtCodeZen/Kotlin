@@ -9,7 +9,7 @@ fun main(){
     println(objSmartDevice.speakerVolume)
 
     val objSmartLightDevice = SmartLightDevice("LED-Light", "Light")
-    objSmartLightDevice.brightnessLevel = 100
+    objSmartLightDevice.brightnessLevel = 20
     objSmartLightDevice.increaseBrightness()
 
     var smartDevice: SmartDevice = SmartTvDevice("Android-TV", "Entretenimento")

@@ -2,22 +2,15 @@ package CourseAndroidKotlin.RelacaoHeranca
 
 import CourseAndroidKotlin.RelacaoHeranca.SmartDevice
 import LivroKotlin.smartDevice
+import org.w3c.dom.ranges.Range
 
 class SmartTvDevice(deviceName: String, deviceCategory: String) : SmartDevice(name = deviceName, category = deviceCategory){
     override val deviceType = "Smart_TV"
+    // usando o delegate
+    // delegando o get e set para uma interface
+    var speakerVolume by RangeRegulator(initialValue = 0, minValue = 0, maxValue = 100)
+    var channelNumber by RangeRegulator(1, 0, 200)
 
-    var speakerVolume = 2
-        set(value){
-            if(value in 0..100){
-                field = value
-            }
-        }
-    var channelNumber = 1
-        set(value) {
-            if(value in 0..200){
-                field = value
-            }
-        }
     fun increaseSpeakerVolume(){
         speakerVolume++
         println("Speaker volume increased to $speakerVolume")
