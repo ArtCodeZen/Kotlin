@@ -1,4 +1,4 @@
-package CourseAndroidKotlin.Construtor
+package courseAndroidKotlin.Construtor
 
 fun main(){
     val smartDevice = SmartDevice("Tv", "Eletronicos", 10)

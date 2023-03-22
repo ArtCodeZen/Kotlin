@@ -1,4 +1,4 @@
-package CourseAndroidKotlin.RelacaoHeranca
+package courseAndroidKotlin.relacaoHeranca
 
 open class SmartDevice(val name: String, val category: String){
     var deviceStatus = "on"

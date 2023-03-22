@@ -1,4 +1,4 @@
-package CourseAndroidKotlin.RelacaoHeranca
+package courseAndroidKotlin.relacaoHeranca
 
 class SmartLightDevice(deviceName: String, deviceCategory: String) : SmartDevice(name = deviceName, category = deviceCategory){
 

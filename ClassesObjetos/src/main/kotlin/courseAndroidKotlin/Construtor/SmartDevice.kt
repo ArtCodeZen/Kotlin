@@ -1,4 +1,4 @@
-package CourseAndroidKotlin.Construtor
+package courseAndroidKotlin.Construtor
 
 class SmartDevice(val name : String, val category: String){
     var deviceStatus = "online"

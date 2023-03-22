@@ -1,4 +1,4 @@
-package CourseAndroidKotlin.RelacaoHeranca
+package courseAndroidKotlin.relacaoHeranca
 
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty

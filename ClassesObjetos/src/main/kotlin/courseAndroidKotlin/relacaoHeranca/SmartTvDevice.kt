@@ -1,8 +1,4 @@
-package CourseAndroidKotlin.RelacaoHeranca
-
-import CourseAndroidKotlin.RelacaoHeranca.SmartDevice
-import LivroKotlin.smartDevice
-import org.w3c.dom.ranges.Range
+package courseAndroidKotlin.relacaoHeranca
 
 class SmartTvDevice(deviceName: String, deviceCategory: String) : SmartDevice(name = deviceName, category = deviceCategory){
     override val deviceType = "Smart_TV"

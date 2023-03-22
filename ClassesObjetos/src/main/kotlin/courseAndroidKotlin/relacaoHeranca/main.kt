@@ -1,6 +1,5 @@
-package CourseAndroidKotlin.RelacaoHeranca
+package courseAndroidKotlin.relacaoHeranca
 
-import CourseAndroidKotlin.RelacaoHeranca.SmartDevice
 
 fun main(){
     val objSmartDevice = SmartTvDevice("Lg ultra wide", "TV")

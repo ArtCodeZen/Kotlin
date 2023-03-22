@@ -1,4 +1,4 @@
-package CourseAndroidKotlin.RelacaoHeranca
+package courseAndroidKotlin.relacaoHeranca
 
 class SmartHome(
     val smartTvDevice: SmartTvDevice,
