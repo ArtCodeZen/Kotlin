@@ -18,6 +18,8 @@ fun main() {
     }
     functionAltoBaixoResumida()
     functionAltoBaixoFinal()
+    lambdaTest(dado = {"Valor: $it"})
+
 
 
 }
@@ -31,7 +33,11 @@ val printMessageAlert ={
 val happyMessage: ()->Unit = {
     println("Unidade vazia, legal")
 }
+fun lambdaTest(dado: (Int) -> String){
+    println(dado(10))
+    val mensagem = { println("OK") }
 
+}
 fun altoOuBaixo(isAlto: Boolean, outroDoce: (Int) -> String) : ()->Unit{
     if(isAlto){
 
